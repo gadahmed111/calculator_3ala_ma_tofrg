@@ -1,0 +1,203 @@
+/* Gloable */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Heebo:wght@500&family=Karla&family=Manrope:wght@300&family=Mooli&family=REM:wght@500&family=Raleway:wght@300&family=Roboto:wght@300&family=Rubik:wght@300;400&family=Ubuntu:wght@300;400&family=Work+Sans&display=swap');
+*{
+    scroll-behavior: smooth;
+    margin: 0px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'REM', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background-image: url('../IMGS/stacked-peaks-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: 1700px;
+    background-position: top;
+}
+/* The container */
+.the_container_of_calc{
+    border: 2px solid black;
+    width: 320px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 80px auto 0px auto;
+    background-color: #17181a;
+    color: white;
+}
+.the_monitor{
+    height: 220px;
+    position: relative;
+}
+button{
+    border-radius: 12px;
+    color: #29a8ff;
+    background-color: #2f3136;
+    padding: 25px;
+    border: none;
+    transition: all .1s linear;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* GRID */
+.buttons{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(8*1fr);
+    grid-template-rows: repeat(6*1fr);
+}
+button:hover{
+    background-color: #4a4d55;
+}
+/* The first column */
+.the_main_article1{
+    margin-top: 10px;
+}
+.the_main_button1{
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+/* The second Column */
+.the_main_article2{
+    display: flex;
+    justify-content: space-between;
+}
+.the_main_button2{
+    padding: 15px 40px;
+}
+.the_main_button2_1{
+    margin-left: 10px;
+}
+.the_main_button2_4{
+    margin-right: 10px;
+}
+/* The third column */
+.the_main_article3{
+    display: flex;
+    justify-content: space-between;
+}
+.the_main_button3_1{
+    margin-left: 10px;
+}
+.the_main_button3_4{
+    margin-right: 10px;
+}
+/* The Fourth column  */
+.the_main_article4{
+    display: flex;
+    justify-content: space-between;
+}
+.the_main_button4_1{
+    margin-left: 10px;
+}
+.the_main_button4_4{
+    margin-right: 10px;
+}
+.the_main_button2_1 , .the_main_button2_2{
+    padding: 10px 13px;
+}
+/* The five Column */
+.the_main_article5{
+    display: flex;
+    justify-content: start;
+}
+.the_main_button5_1{
+    margin-left: 10px;
+}
+.the_main_button5_2{
+    margin-left: 20px;
+}
+.the_main_button5_3{
+    margin-left: 20px;
+}
+.the_main_button4_4{
+    /* height: 200px; */
+}
+.the_main_article6{
+    display: flex;
+    justify-content: start;
+}
+.the_main_button6_1{
+    margin-left: 10px;
+}
+.the_main_button6_2{
+    margin-left: 20px;
+}
+.the_main_button6_3{
+    margin-left: 20px;
+}
+.the_main_button6_3{
+    width: 146px;
+}
+.the_main_button5_4{
+    margin-left: 16px;
+}
+.the_main_button2_1 , .the_main_button2_2{
+    background-color: #606161    ;
+    color: #838ba1  ;
+}
+.SPA_COLOR{
+    background-color: #005db2;
+    color: white;
+}
+.SPA_COLOR1{
+    background-color: #1991ff;
+}
+.SPA_COLOR:hover{
+    background-color: #023e77;
+}
+.the_main_button5_4_1{
+    /* border: 1px solid red; */
+    padding: 23px;
+}
+.the_main_article6{
+    margin-bottom: 15px;
+}
+hr{
+    color: gray;
+    border: 1px solid;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+.out_put{
+    font-size: 40px;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}
+.the_EX{
+    font-size: 20px;
+    position: absolute;
+    bottom: 90px;
+    right: 10px;
+}
+.the_main_button6_1{
+    padding: 24px;
+}
+.the_main_button5_4_1{
+    padding: 23px;
+}
+.the_main_button4_3{
+    margin-left: 5px;
+}
+.the_main_button4_2{
+    margin-left: 3px;
+}
+.the_main_button5_2{
+    margin-left: 22px;
+}
+.the_main_button3_2{
+    margin-left: 2px;
+}
+.the_main_button4_4{
+    position: relative;
+    left: 2.4px;
+}
