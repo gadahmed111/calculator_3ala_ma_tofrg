@@ -39,7 +39,9 @@ Equal.addEventListener("click" , () =>{
         }else if (the_EX.textContent.includes("*")){
             theFinelOutPut.textContent = parseFloat(the_EX.textContent.slice(0,the_EX.textContent.indexOf("*"))) * parseFloat(the_EX.textContent.slice(the_EX.textContent.indexOf("*") + 1,the_EX.textContent.length));
         }else if (the_EX.textContent.includes("%")){
-            theFinelOutPut.textContent = TheFirstPart % parseFloat(the_EX.textContent.slice(the_EX.textContent.lastIndexOf("%"),the_EX.textContent.length));
+            theFinelOutPut.textContent = parseFloat(the_EX.textContent.slice(0,the_EX.textContent.indexOf("%"))) % parseFloat(the_EX.textContent.slice(the_EX.textContent.lastIndexOf("%") + 1,the_EX.textContent.length));
+            console.log(parseFloat(the_EX.textContent.slice(0,the_EX.textContent.indexOf("%"))))
+            console.log(parseFloat(the_EX.textContent.slice(the_EX.textContent.lastIndexOf("%") + 1,the_EX.textContent.length)))
         }else {
             theFinelOutPut.textContent = "ERR (: 27sn   "
         }
