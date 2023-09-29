@@ -18,20 +18,20 @@ let Oprator = document.querySelectorAll(".Oprator");
 let Equal = document.getElementsByClassName("equal")[0];
 let theFinelOutPut = document.getElementsByClassName("out_put")[0];
 Equal.addEventListener("click" , () =>{
-        let TheFirstPart = the_EX.textContent.slice(0,the_EX.textContent.indexOf("+"));
-        let TheSecondPart = the_EX.textContent.slice(the_EX.textContent.indexOf("+") + 1,the_EX.textContent.length)
+        let TheFirstPart = parseFloat(the_EX.textContent.slice(0,the_EX.textContent.indexOf("+")));
+        let TheSecondPart = parseFloat(the_EX.textContent.slice(the_EX.textContent.indexOf("+") + 1,the_EX.textContent.length))
         // console.log(`the First part is ${TheFirstPart} the second part is ${TheSecondPart}`)
         // console.log(the_EX.textContent.includes("+"))
         if (the_EX.textContent.includes("+")){
-            theFinelOutPut.textContent = (parseInt(TheFirstPart) + parseInt(TheSecondPart));
+            theFinelOutPut.textContent = TheFirstPart + TheSecondPart;
         }else if (the_EX.textContent.includes("-")){    
-            theFinelOutPut.textContent = (parseInt(TheFirstPart) - parseInt(TheSecondPart));
+            theFinelOutPut.textContent = TheFirstPart - parseFloat(the_EX.textContent.slice(the_EX.textContent.lastIndexOf("+"),the_EX.textContent.length));
         }else if (the_EX.textContent.includes("/")){
-            theFinelOutPut.textContent = (parseInt(TheFirstPart) / parseInt(TheSecondPart));
+            theFinelOutPut.textContent = TheFirstPart / parseFloat(the_EX.textContent.slice(the_EX.textContent.lastIndexOf("+"),the_EX.textContent.length)) ;
         }else if (the_EX.textContent.includes("*")){
-            theFinelOutPut.textContent = (parseInt(TheFirstPart) * parseInt(TheSecondPart));
+            theFinelOutPut.textContent = TheFirstPart * TheSecondPart;
         }else if (the_EX.textContent.includes("%")){
-            theFinelOutPut.textContent = (parseInt(TheFirstPart) % parseInt(TheSecondPart));
+            theFinelOutPut.textContent = TheFirstPart % parseFloat(the_EX.textContent.slice(the_EX.textContent.lastIndexOf("+"),the_EX.textContent.length));
         }else {
             theFinelOutPut.textContent = "ERR (: 27sn   "
         }
